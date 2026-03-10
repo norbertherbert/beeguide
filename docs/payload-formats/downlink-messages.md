@@ -11,6 +11,8 @@ The list below gives a quick overview of the main message types. The examples ar
 
 ## Downlink Message Types
 
+Downlink message types have two categories: *Command messages* and *Request messages*.
+
 ### Command Messages
 
 Command messages are sent to trigger actions on the device. Examples of request messages are

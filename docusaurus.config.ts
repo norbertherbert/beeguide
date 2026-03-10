@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'BeeGuide',
-  tagline: 'Documentation for Abeeway tracker solutions',
+  tagline: 'Quick reference guide for Abeeway trackers',
   favicon: 'img/beeguide-favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -79,8 +79,8 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/',
-          label: 'GitHub',
+          href: 'https://tools.abeeway.io/',
+          label: 'BeeTools',
           position: 'right',
         },
       ],
@@ -114,13 +114,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/',
+              label: 'BeeTools',
+              href: 'https://tools.abeeway.io/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} BeeGuide. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Abeeway.`,
     },
     prism: {
       theme: prismThemes.github,

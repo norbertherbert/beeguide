@@ -9,6 +9,8 @@ Abeeway devices can send different uplink message types depending on what they n
 
 ## Uplink Message Types
 
+Uplink message types have four categories: *Notification messages*, *Position messages*, *Query messages* and *Response messages*.
+
 ### Notification Messages
 
 Notification messages are sent when the device detects an event or a change of state.
@@ -42,6 +44,10 @@ Response messages are sent by the device after certain downlink commands.
 - Configuration set responses
 - Configuration get responses
 - BLE connectivity status responses
+
+## Decoding Uplink Messages
+
+You can decode the uplink messages sent by the Abeeway device using our Javascript driver, that is published in the public Node repository, npmjs.com here: [abeeway-asset-tracker-driver-v3](https://www.npmjs.com/package/abeeway-asset-tracker-driver-v3)
 
 ## Further Reading
 

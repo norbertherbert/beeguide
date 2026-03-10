@@ -10,9 +10,30 @@
   overflow: hidden;
 }
 
+.heroTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.heroTitleIcon {
+  width: 6rem;
+  height: 6rem;
+  flex: 0 0 auto;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+  }
+
+  .heroTitle {
+    gap: 0.5rem;
+  }
+
+  .heroTitleIcon {
+    width: 4.8rem;
+    height: 4.8rem;
   }
 }
 

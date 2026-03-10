@@ -59,8 +59,18 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'integration/intro',
-        'integration/thingpark', 
-        'integration/third-party-lns'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Quick Demo',
+      link: {
+        type: 'generated-index',
+        title: 'Quick Demo',
+        description: 'Guide to set up quick demos.',
+      },
+      items: [
+        'quick-demo/intro',
       ],
     },
   ],
