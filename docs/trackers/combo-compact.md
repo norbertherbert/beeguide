@@ -1,0 +1,90 @@
+---
+title: Combo Compact
+sidebar_position: 1
+---
+
+# (Combo) Compact Tracker
+
+<img src="/img/compact-tracker.png" alt="BeeHive logo" width="300" />
+
+## Connectivity
+
+The Abeeway Compact Tracker has 2 variants:
+
+- **Compact Tracker** supports
+  - LoRaWAN® connectivity
+- **Combo Compact Tracker** supports
+  - Cellular (LTE-M, NB-IoT)
+  - LoRaWAN® connectivity
+
+## Embedded sensors
+
+- Accelerometer
+- Multi–constellation GNSS
+- Low-power (assisted) GPS
+- Wi-Fi scanner
+- BLE scanner
+- Tamper sensors (tamper switch and hall-effect sensor)
+
+## Firmware Features
+
+### LoRaWAN Connectivity
+
+- Class A operation
+- Support for all main regional parameters (EU, AS, IN, AU, US)
+- Over The Air Activation (OTA)
+- Network monitoring (Link check, Reset on prolonged network loss)
+- Multiple transmissions strategies (configurable ADR, Dual transmissions)
+- Configurable confirmed uplinks
+- Configurable heartbeat period
+- Synchronization to network time
+
+### Main Cellular LPWAN features (for the Combo variant)
+
+- Support for NB-IoT and LTE-M
+- Support for physical SIM and eSIM
+- Support for PSM and eDRX modes
+- Configurable heartbeat period
+- Network time synchronization
+
+### Geolocation
+
+- Configurable multi-technology (GNSS, LP-GNSS, BLE, WiFi) geolocation profiles based on triggers (button press, SoS, etc)
+- BLE positioning using beacon type (Eddystone, Altbeacon, iBeacon) & beacon identifier filtering
+- Configurable timing for geolocation (timeout, LoRaWAN reporting)
+
+### BLE inventory management/BLE scan collection
+
+- Reporting of upto 20 BLE beacons using beacon type & beacon identifier filtering
+
+### SOS support
+
+- Specific UI to trigger sending SoS messages
+- Configurable geolocation behaviour during SoS mode
+
+### BLE connectivity
+
+- Single bonding / Passkey authentication support
+- BLE firmware update over the air
+- MCU firmware update over the air
+- CLI over BLE
+
+### BLE beaconing
+
+- Configurable beacon transmission (Eddystone, Altbeacon, iBeacon & Quuppa)
+
+### Device management
+
+- CLI interface (Support multiple commands, two access levels)
+- Log facility (Per module log)
+- Accelerometer management (Motion and shock detection)
+- Temperature management (Permanent storage of the min/max values, actions taken when min/max thresholds reached)
+- Battery management (Primary vs rechargeable batteries, remaining capacity measurement, and estimated consumption).
+- Configuration parameters management (Permanent storage, Configuration files and Parameter identifier parser)
+- Firmware update over USB, BLE, and cellular network (FUOTA)
+
+## Further Reading
+
+- [Datasheet](https://www.abeeway.com/wp-content/uploads/2024/11/Abeeway_Combo-Compact-data-sheet_05.pdf)
+- [Product page](https://www.abeeway.com/combo-lpwan-tracker/)
+- [Reference Manual](https://docs.thingpark.com/thingpark-location/firmware/functioning)

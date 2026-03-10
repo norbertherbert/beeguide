@@ -1,0 +1,41 @@
+---
+title: Downlink Messages
+sidebar_position: 2
+---
+
+# Downlink Messages
+
+An application server can send downlink messages to the device to trigger actions, request information, or change its behaviour.
+
+The list below gives a quick overview of the main message types. The examples are only there to illustrate each type and are not exhaustive.
+
+## Downlink Message Types
+
+### Command Messages
+
+Command messages are sent to trigger actions on the device. Examples of request messages are
+
+- Reset the tracker
+- Start or stop SOS
+- Request a position on demand
+- Set the GPS/BeiDou almanac
+- Start or stop BLE connectivity
+- Get buffered uplinks
+- etc.
+
+### Request Messages
+
+Request messages are sent to read information from the device or to update its configuration.
+
+- Configuration get/set requests
+- BLE connectivity status request
+- CRC configuration request
+- Sensor value requests
+- Debug information requests
+- FUOTA (Firmware Update Over The Air) requests
+
+## Further Reading
+
+- [Downlink payload format description](https://docs.thingpark.com/thingpark-location/firmware/application-downlink)
+- [Payload examples](https://github.com/actility/device-catalog/blob/main/vendors/abeeway/drivers/asset-tracker-3/examples.json)
+- [JavaScript encoder/decoder](https://www.npmjs.com/package/abeeway-asset-tracker-driver-v3)
