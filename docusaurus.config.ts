@@ -18,11 +18,11 @@ const config: Config = {
   url: 'https://norbertherbert.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'beeguide',
+  baseUrl: '/beeguide/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'abeeway', // Usually your GitHub org/user name.
+  organizationName: 'norbertherbert', // Usually your GitHub org/user name.
   projectName: 'beeguide', // Usually your repo name.
 
   onBrokenLinks: 'throw',
