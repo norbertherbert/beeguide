@@ -5,15 +5,15 @@ sidebar_position: 1
 
 # Uplink Messages
 
-Abeeway devices can send different uplink message types depending on what they need to report. The list below gives a quick overview of the main message types. The examples are only there to illustrate each type and are not exhaustive.
+Abeeway devices can send different types of uplink messages depending on what they need to report. The list below provides a quick overview of the main message types. The examples are illustrative only and are not exhaustive.
 
 ## Uplink Message Types
 
-Uplink message types have four categories: *Notification messages*, *Position messages*, *Query messages* and *Response messages*.
+Uplink messages fall into four categories: *Notification messages*, *Position messages*, *Query messages*, and *Response messages*.
 
 ### Notification Messages
 
-Notification messages are sent when the device detects an event or a change of state.
+Notification messages are sent when the device detects an event or a change in state.
 
 - System notifications such as low battery or tamper detection
 - SOS notifications
@@ -24,7 +24,7 @@ Notification messages are sent when the device detects an event or a change of s
 
 ### Position Messages
 
-Position messages are used to report location data collected by the device.
+Position messages report location data collected by the device.
 
 - GNSS location data
 - Wi-Fi scan reports
@@ -34,12 +34,12 @@ Position messages are used to report location data collected by the device.
 
 Query messages are sent when the device needs additional information to operate more efficiently.
 
-- Echo requests used for cellular connectivity checks
-- GPS/BeiDou almanac update requests used for assisted GNSS
+- Echo requests for cellular connectivity checks
+- GPS/BeiDou almanac update requests for assisted GNSS
 
 ### Response Messages
 
-Response messages are sent by the device after certain downlink commands.
+Response messages are sent by the device in reply to certain downlink commands.
 
 - Configuration set responses
 - Configuration get responses
@@ -47,7 +47,9 @@ Response messages are sent by the device after certain downlink commands.
 
 ## Decoding Uplink Messages
 
-You can decode the uplink messages sent by the Abeeway device using our Javascript driver, that is published in the public Node repository, npmjs.com here: [abeeway-asset-tracker-driver-v3](https://www.npmjs.com/package/abeeway-asset-tracker-driver-v3)
+You can decode uplink messages from Abeeway devices with our JavaScript driver, published on npm as [abeeway-asset-tracker-driver-v3](https://www.npmjs.com/package/abeeway-asset-tracker-driver-v3).
+
+If you prefer to download the driver manually, you can find it in the [abeeway-driver](https://github.com/norbertherbert/abeeway-driver) GitHub repository.
 
 ## Further Reading
 

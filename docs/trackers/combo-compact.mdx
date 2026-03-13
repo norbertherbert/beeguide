@@ -11,13 +11,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Connectivity
 
-The Abeeway Compact Tracker has 2 variants:
+The Abeeway Compact Tracker is available in two variants:
 
-- **Compact Tracker** supports
-- LoRaWAN(R) connectivity
-- **Combo Compact Tracker** supports
-- Cellular (LTE-M, NB-IoT)
-- LoRaWAN(R) connectivity
+- **Compact Tracker**, which supports:
+  - LoRaWAN connectivity
+- **Combo Compact Tracker**, which supports:
+  - Cellular (LTE-M, NB-IoT)
+  - LoRaWAN connectivity
 
 ## Embedded sensors
 
@@ -30,18 +30,20 @@ The Abeeway Compact Tracker has 2 variants:
 
 ## Firmware Features
 
-### LoRaWAN Connectivity
+### Connectivity
+
+#### LoRaWAN connectivity features
 
 - Class A operation
-- Support for all main regional parameters (EU, AS, IN, AU, US)
-- Over The Air Activation (OTA)
-- Network monitoring (Link check, Reset on prolonged network loss)
-- Multiple transmissions strategies (configurable ADR, Dual transmissions)
+- Support for all major regional parameters (EU, AS, IN, AU, US)
+- Over-the-Air Activation (OTA)
+- Network monitoring (link check, reset on prolonged network loss)
+- Multiple transmission strategies (configurable ADR, dual transmissions)
 - Configurable confirmed uplinks
 - Configurable heartbeat period
 - Synchronization to network time
 
-### Main Cellular LPWAN features (for the Combo variant)
+#### Cellular connectivity features (for the Combo variant)
 
 - Support for NB-IoT and LTE-M
 - Support for physical SIM and eSIM
@@ -51,18 +53,34 @@ The Abeeway Compact Tracker has 2 variants:
 
 ### Geolocation
 
-- Configurable multi-technology (GNSS, LP-GNSS, BLE, WiFi) geolocation profiles based on triggers (button press, SoS, etc)
-- BLE positioning using beacon type (Eddystone, Altbeacon, iBeacon) & beacon identifier filtering
-- Configurable timing for geolocation (timeout, LoRaWAN reporting)
-
-### BLE inventory management/BLE scan collection
-
-- Reporting of upto 20 BLE beacons using beacon type & beacon identifier filtering
+- Configurable multi-technology geolocation profiles
+  - GNSS
+  - Assisted GNSS (Low-Power GNSS / LP-GNSS)
+  - BLE Scan
+  - Wi-Fi Scan
+- Configurable triggers for location updates:
+  - Button press
+  - Motion-start, Motion-end
+  - Periodic triggers for in-static and in-motion states
+  - SOS events
+  - Additional event-based triggers
+- BLE positioning with filtering options:
+  - Beacon type filtering: Eddystone, Altbeacon, iBeacon
+  - Beacon ID pattern matching
+- Configurable geolocation timeouts
 
 ### SOS support
 
-- Specific UI to trigger sending SoS messages
-- Configurable geolocation behaviour during SoS mode
+- Dedicated UI for triggering SOS messages
+- Configurable geolocation behavior during SOS mode
+
+### BLE inventory management/BLE scan collection
+
+- Reporting of up to 20 BLE beacons with beacon-type and beacon-identifier filtering
+
+### BLE beaconing
+
+- Configurable beacon transmission (Eddystone, Altbeacon, iBeacon & Quuppa)
 
 ### BLE connectivity
 
@@ -71,18 +89,14 @@ The Abeeway Compact Tracker has 2 variants:
 - MCU firmware update over the air
 - CLI over BLE
 
-### BLE beaconing
-
-- Configurable beacon transmission (Eddystone, Altbeacon, iBeacon & Quuppa)
-
 ### Device management
 
-- CLI interface (Support multiple commands, two access levels)
-- Log facility (Per module log)
-- Accelerometer management (Motion and shock detection)
-- Temperature management (Permanent storage of the min/max values, actions taken when min/max thresholds reached)
-- Battery management (Primary vs rechargeable batteries, remaining capacity measurement, and estimated consumption).
-- Configuration parameters management (Permanent storage, Configuration files and Parameter identifier parser)
+- Command Line Interface (CLI) over USB or BLE connected console
+- Event logging over CLI
+- Accelerometer management (motion and shock detection)
+- Temperature management (permanent storage of min/max values, actions when thresholds are reached)
+- Battery management (primary vs. rechargeable batteries, remaining capacity measurement, and estimated consumption)
+- Configuration parameter management (permanent storage, configuration files, and parameter identifier parsing)
 - Firmware update over USB, BLE, and cellular network (FUOTA)
 
 ## Further Reading
